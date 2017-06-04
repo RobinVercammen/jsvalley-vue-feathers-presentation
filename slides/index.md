@@ -13,7 +13,7 @@ using **Vue**, **Vuex**, and, **Feathers**
 - browser <-> build
 - cli
 - documentation
-:note ask question about using build process or browser based imports
+Note: ask question about using build process or browser based imports
 
 
 ## [Vue-router](https://github.com/vuejs/vue-router)
@@ -25,7 +25,7 @@ using **Vue**, **Vuex**, and, **Feathers**
 - state managemnt
 - tailor made for vue
 - async & sync
-:note ask for alternatives
+Note: ask for alternatives
 
 
 ## [Feathers](https://github.com/feathersjs/feathers)
@@ -38,7 +38,7 @@ using **Vue**, **Vuex**, and, **Feathers**
 
 ## [Firebase](https://firebase.google.com/)
 - bindings via [VueFire](https://github.com/vuejs/vuefire)
-:note cool but not going to do anything with it
+Note: cool but not going to do anything with it
 
 
 
