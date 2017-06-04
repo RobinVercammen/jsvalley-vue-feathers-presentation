@@ -1,56 +1,100 @@
+# Crafting a reactive application  
+using **Vue**, **Vuex**, and, **Feathers**  
+[www.involved-it.be](https://www.involved-it.be)
+
+
+
 # Choosing the stack
 
 
+## [Vuejs](https://github.com/vuejs/vue)
+- learning curve
+- simple
+- browser <-> build
+- cli
+- documentation
+:note ask question about using build process or browser based imports
+
+
+## [Vue-router](https://github.com/vuejs/vue-router)
+- integration
+- learning curve
+
+
+## [Vuex](https://github.com/vuejs/vuex)
+- state managemnt
+- tailor made for vue
+- async & sync
+:note ask for alternatives
+
+
+## [Feathers](https://github.com/feathersjs/feathers)
+- composable api
+- authentication
+- transport friendly
+- persistence friendly
+- javascript client
+
+
+## [Firebase](https://firebase.google.com/)
+- bindings via [VueFire](https://github.com/vuejs/vuefire)
+:note cool but not going to do anything with it
+
+
+
+# Choosing the tools
+- Vscode
+    - Vetur plugin
+    - eslint plugin
+- Docker
+    - Mongodb
+
+
+
+# Implementing the stack
+- technical
+- not feature filled
+- touch concepts
+
+
 ## Vue
+- unpackaged / cdn
+- cli (with option router)
+```bash
+npm i -g vue-cli
+vue init webpack app
+```
 
 
 ## Vuex
+```bash
+npm i -S vuex
+```
 
 
-## Rxjs
+## Feathers-client
+```bash
+npm i -S feathers-client socket.io-client
+```
 
 
-## Firebase
+## Mongo
+```bash
+docker run --name jsvalley -d -p 27017:27017 mongo
+```
 
 
-## FeathersJs
+## Feathers
 
-
-
-## Install vue cli
-`npm i g vue-cli`
-or 
-hardcore mode => unpackaged hier zeker de vraag stellen
-- choose a template (webpack)
-highlight the options
-
-
-
-## Install feathers cli
-`npm i g feathers-cli`
-
-
-## Add db connection
-`feathers generate connection`
-setup docker image
-`docker run --name jsvalley -d -p 27017:27017 mongo`
-
-
-## Add user auth
-`feathers generate authentication`
-post to /users {email, password}
-
-`docker exec -it jsvalley mongo`
+```bash
+npm i -g feathers-cli
+feathers generate app
+feathers generate connection
+feathers generate authentication
+feathers generate service
+feathers generate hook
+```
 
 
 
-## Create user in frontend
-Highlight vscode plugins
-"emmet.syntaxProfiles": {
-        "vue-html": "html",
-        "vue": "html"
-    }
-
-
-
-
+# Code it!
