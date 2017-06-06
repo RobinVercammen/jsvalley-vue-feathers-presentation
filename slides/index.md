@@ -22,7 +22,7 @@ Note: ask question about using build process or browser based imports
 
 
 ## [Vuex](https://github.com/vuejs/vuex)
-- state managemnt
+- state management
 - tailor made for vue
 - async & sync
 Note: ask for alternatives
